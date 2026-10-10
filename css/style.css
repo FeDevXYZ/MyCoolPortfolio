@@ -20,25 +20,50 @@ html {
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 18vw;
-  background: #c3c395;
+  justify-content: space-between;
+  background: #c3b895;
   padding: 30px;
   padding-top: 10px;
   padding-right: 0;
   margin-bottom: 30px;
   border-radius: 10px;
-  -moz-border-radius-top-right: 0;
-  -moz-border-radius-top-left: 0;
   height: 40vh;
   overflow: hidden;
 }
 h1 {
   font-size: 50px;
   margin-bottom: 0;
+  text-decoration: underline dotted #a99f81 5px;
+  text-underline-offset: 5px;
 }
 h2 {
   margin-top: 0;
+  margin-right: 10px;
+}
+.img {
+  box-shadow: -5px 10px 31px 0 rgba(0,0,0,0.22);
+  -webkit-box-shadow: -5px 10px 31px 0 rgba(0,0,0,0.22);
+  -moz-box-shadow: -5px 10px 31px 0 rgba(0,0,0,0.22);
+}
+.landbutton {
+  padding: 8px;
+  background: #5c5148;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 2px 13px 0 rgba(0,0,0,0.17);
+  -webkit-box-shadow: 1px 2px 13px 0 rgba(0,0,0,0.17);
+  -moz-box-shadow: 1px 2px 13px 0 rgba(0,0,0,0.17);
+  color: white;
+}
+.landbutton:hover {
+  background: #4c4138;
+  transform: scale(1.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.landbutton:active {
+  background: #655a51;
+  transform: scale(0.95);
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 /*
  * Remove text-shadow in selection highlight:
