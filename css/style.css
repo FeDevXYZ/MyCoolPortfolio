@@ -99,6 +99,18 @@ h2 {
   object-fit: cover;
   border-radius: 10px;
 }
+.photobackimghid{
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: none;
+}
+@media (min-width: 1150px) {
+  .photobackimghid{
+    display: block;
+  }
+}
 .papernote{
   display: flex;
   justify-content: flex-start;
@@ -119,6 +131,108 @@ h2 {
   z-index: 1;
 }
 
+/* ==========================================================================
+   Projects section
+   ========================================================================== */
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.title h1{
+  margin-top: 0;
+}
+.title p{
+  margin-bottom: 0;
+  font-size: 25px;
+  transform: translateY(50%);
+}
+.project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(195 184 149);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.project-content{
+  padding: 8px 0 0 20px;
+  margin-right: 20px;
+  width: 40vw;
+}
+.project-content h3{
+  font-size: 20px;
+}
+.project img{
+  width: 50vw;
+  height: 300px;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
+  mask-image: linear-gradient(to left, black 60%, transparent 100%);
+}
+.project-pills{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+.pill{
+  padding: 5px 10px;
+  background-color: #5c5148;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.project-rev{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(195 184 149);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.project-content-rev{
+  padding: 8px 20px 0 0;
+  margin-left: 20px;
+  width: 40vw;
+}
+.project-content-rev h3{
+  font-size: 20px;
+}
+.project-rev img{
+  width: 50vw;
+  height: 300px;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+  mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+.project-pills-rev{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+}
+.pill-rev{
+  padding: 5px 10px;
+  background-color: #5c5148;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.project:hover {
+  transform: scale(1.005);
+  z-index: 3;
+  background-color: rgb(214 204 170);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.project-rev:hover {
+  transform: scale(1.005);
+  z-index: 3;
+  background-color: rgb(214 204 170);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -346,4 +460,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
