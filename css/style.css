@@ -170,6 +170,7 @@ h2 {
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
   mask-image: linear-gradient(to left, black 60%, transparent 100%);
+  border-radius: 0 10px 10px 0px;
 }
 .project-pills{
   position: absolute;
@@ -207,6 +208,7 @@ h2 {
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
   mask-image: linear-gradient(to right, black 60%, transparent 100%);
+  border-radius: 10px 0 0 10px;
 }
 .project-pills-rev{
   position: absolute;
