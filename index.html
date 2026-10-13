@@ -31,7 +31,7 @@
       <h1>Federico</h1>
       <h2>Creativity, code and design for a better world</h2>
       <div style="display: flex; flex-direction: row; align-items: center; gap: 10px">
-        <button class="landbutton">Discover my projects</button>
+        <button class="landbutton" href="#projects" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Discover my projects</button>
         <button class="landbutton">See my photos</button>
       </div>
     </div>
@@ -44,7 +44,7 @@
     <div class="papernote">
       <div style="display: flex; flex-direction: row;">
         <p style="z-index: 1; color: black; font-size: 28px; transform: rotate(-3deg);"><strong>I am Federico.</strong></p>
-        <img src="img/Firefly.png"m style="width: 110px; height: 130px; background-size: contain; transform: translateY(60%)">
+        <img src="img/Firefly.png" style="width: 110px; height: 130px; background-size: contain; transform: translateY(60%)">
       </div>
       <p style="z-index: 1; color: black; font-size: 24px; transform: translateY(-90%) rotate(-3deg) translateX(-40%);">- Photographer <br>- Programmer<br>- Tech lover</p>
     </div>
@@ -63,7 +63,8 @@
       <img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/616162333_17909424300295552_1090609740255352349_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzgwOTkxMDc1Mzc0NzI3OTExNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xv7ro9w3o4gQ7kNvwHVk40H&_nc_oc=AdqWUt0wAMclQB5NsagentM06WYPrIeSrCgJX_n8h07zLFzEmczkd-1oettVkatBZa0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQNoSjO0k5PsClSF3qZrsclelx2lszEYRwxxM0TgTSX8Wg&oe=6AD1A4A9" class="photobackimghid">
     </div>
   </div>
-  <div class="projects">
+
+  <div class="projects" id="projects">
     <div class="title">
       <p>DISCOVER</p>
       <h1>Projects</h1>
@@ -102,7 +103,31 @@
         <h3>🟇 D-Desk</h3>
         <p>ESP-32 based smart desk controller, featuring a 128x64 monochrome OLED display, 9 buttons, 2 potentiometers, a USB-C port for power and endless possibilites. This is a <em>prototype</em> that uses a python listener on the PC to send controls on Internet. One day every mode will be easily customizable via a web tool built for it.</p>
       </div>
-      <img src="img/d-desk.jpeg" alt="D-Deskr">
+      <img src="img/d-desk.jpeg" alt="D-Desk">
+    </div>
+  </div>
+  <div id="photos" class="photos">
+    <div class="title">
+      <p>BROWSE</p>
+      <h1>Gallery</h1>
+    </div>
+    <div class="gallery-cards" tab-index="0">
+      <div class="track">
+        <!-- Primo set -->
+        <div class="card"><img src="https://scontent-mxp1-1.cdninstagram.com/v/t51.82787-15/694752211_17926514304295552_3298566990428655380_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg5NDkzMTY3MTYwOTU4NDUyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=cgPvS-RehRUQ7kNvwHwN7tc&_nc_oc=AdpQob0wAF5-AgLeHb43C_I-YpGAQAh4UIuR8sUR1M51J4yQ15p5r2DZGm0qpWw2BRM&_nc_zt=23&_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQPoujNnMoCywHDgbZoyiYGn2Vu1UxhY-8ObObSAnesJBA&oe=6AD1AC8B" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/616162333_17909424300295552_1090609740255352349_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzgwOTkxMDc1Mzc0NzI3OTExNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xv7ro9w3o4gQ7kNvwHVk40H&_nc_oc=AdqWUt0wAMclQB5NsagentM06WYPrIeSrCgJX_n8h07zLFzEmczkd-1oettVkatBZa0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQNoSjO0k5PsClSF3qZrsclelx2lszEYRwxxM0TgTSX8Wg&oe=6AD1A4A9" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp1-1.cdninstagram.com/v/t51.82787-15/684208498_17924137611295552_2024595250336661425_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg4NDA3NDQxNTkzNjA2NDI2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=EcfKnEUEhAAQ7kNvwEAsdLp&_nc_oc=Adr420mxPPPlWw6ymq4kDrSqRyITiFeHodePIASRgletDROq-ReJRmqVRAIqQtpwiuo&_nc_zt=23&_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQOz_FYwjhmOEG32XuL4PatWstpo5vKPodazbo3YTDf9tQ&oe=6AD19E1F" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/608406756_17907754653295552_7006275086131596168_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzc5ODk3MTU5MTgxNzAzMzg0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SEUB8qQCjRgQ7kNvwFvphNo&_nc_oc=AdrvPaqAnakDbFEPl8axDrhUiRTSGCzMApWlQC8gNvZ5E_OahvaMd8v67qdavDLX_xY&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQNknQl9N2tx6g5XS2Al_kOX8jm-vg8PSTo5MywN5COUvA&oe=6AD188EA" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/681056170_17924137563295552_4009457221015668045_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg4NDA3NDM4NDE4NTE5MzEzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TD1xwTYC-ysQ7kNvwHramKO&_nc_oc=Ado3m3O-HeqvvLOb9w5Qrs8aoJ1orafLYqoTeqK_AkHueaYYT0u5CmBem3LLqYk8bJo&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQP6PbFtaxqYSE9VRQ-NRLhXYcXr_UIccOnSUKl7US3bpA&oe=6AD1A9E0" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/684162093_17924137593295552_3014340497567656735_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg4NDA3NDM5OTMyNjYzNjk4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=LmqUnTvnvbwQ7kNvwH_dIGx&_nc_oc=AdqQ9IF3yCAqDwpEjJ2bK5F44qQY5JJHq5PNQnxsGq5p04-B-uD_vTEihPMJnhLcBA4&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQMqi_IdToc8ftIkXJNPtsyHjmcD3UmqscFrNGr_zoO5VA&oe=6AD18735" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <!-- Secondo set (copia identica) -->
+        <div class="card"><img src="https://scontent-mxp1-1.cdninstagram.com/v/t51.82787-15/694752211_17926514304295552_3298566990428655380_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg5NDkzMTY3MTYwOTU4NDUyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=cgPvS-RehRUQ7kNvwHwN7tc&_nc_oc=AdpQob0wAF5-AgLeHb43C_I-YpGAQAh4UIuR8sUR1M51J4yQ15p5r2DZGm0qpWw2BRM&_nc_zt=23&_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQPoujNnMoCywHDgbZoyiYGn2Vu1UxhY-8ObObSAnesJBA&oe=6AD1AC8B" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/616162333_17909424300295552_1090609740255352349_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzgwOTkxMDc1Mzc0NzI3OTExNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=xv7ro9w3o4gQ7kNvwHVk40H&_nc_oc=AdqWUt0wAMclQB5NsagentM06WYPrIeSrCgJX_n8h07zLFzEmczkd-1oettVkatBZa0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQNoSjO0k5PsClSF3qZrsclelx2lszEYRwxxM0TgTSX8Wg&oe=6AD1A4A9" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp1-1.cdninstagram.com/v/t51.82787-15/684208498_17924137611295552_2024595250336661425_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzg4NDA3NDQxNTkzNjA2NDI2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=EcfKnEUEhAAQ7kNvwEAsdLp&_nc_oc=Adr420mxPPPlWw6ymq4kDrSqRyITiFeHodePIASRgletDROq-ReJRmqVRAIqQtpwiuo&_nc_zt=23&_nc_ht=scontent-mxp1-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQOz_FYwjhmOEG32XuL4PatWstpo5vKPodazbo3YTDf9tQ&oe=6AD19E1F" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/608406756_17907754653295552_7006275086131596168_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzc5ODk3MTU5MTgxNzAzMzg0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SEUB8qQCjRgQ7kNvwFvphNo&_nc_oc=AdrvPaqAnakDbFEPl8axDrhUiRTSGCzMApWlQC8gNvZ5E_OahvaMd8v67qdavDLX_xY&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQNknQl9N2tx6g5XS2Al_kOX8jm-vg8PSTo5MywN5COUvA&oe=6AD188EA" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/681056170_17924137563295552_4009457221015668045_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg4NDA3NDM4NDE4NTE5MzEzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=TD1xwTYC-ysQ7kNvwHramKO&_nc_oc=Ado3m3O-HeqvvLOb9w5Qrs8aoJ1orafLYqoTeqK_AkHueaYYT0u5CmBem3LLqYk8bJo&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQP6PbFtaxqYSE9VRQ-NRLhXYcXr_UIccOnSUKl7US3bpA&oe=6AD1A9E0" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+        <div class="card"><img src="https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/684162093_17924137593295552_3014340497567656735_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzg4NDA3NDM5OTMyNjYzNjk4NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=LmqUnTvnvbwQ7kNvwH_dIGx&_nc_oc=AdqQ9IF3yCAqDwpEjJ2bK5F44qQY5JJHq5PNQnxsGq5p04-B-uD_vTEihPMJnhLcBA4&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=dNH8mIDkaWJFCeUypTxeTg&_nc_ss=7b6a8&oh=00_AQMqi_IdToc8ftIkXJNPtsyHjmcD3UmqscFrNGr_zoO5VA&oe=6AD18735" alt="Milazzo - Sicily"><p>Milazzo - Sicily</p></div>
+      </div>
     </div>
   </div>
   <script src="js/app.js"></script>
