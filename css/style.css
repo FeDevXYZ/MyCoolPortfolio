@@ -280,6 +280,7 @@ h2 {
 .card p {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  max-width: 250px;
 }
 /*
  * Remove text-shadow in selection highlight:
