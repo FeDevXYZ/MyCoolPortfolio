@@ -303,165 +303,90 @@ h2 {
   background-position: center;
   aspect-ratio: 16 / 9;
   padding: 9.2% 18.4%;
+  overflow: hidden;
 }
 .container{
   width: 100%;
   height: 100%;
   position: relative;
 }
-.flip-card{
-  position: absolute;
-  display: block;
-  padding: 0;
-  border: 0;
-  background: none;
-  z-index: 5;
-  perspective: 1000px;
-  cursor: pointer;
-}
-.flip-card-inner{
-  position: relative;
-  display: grid;
-  width: 100%;
-  aspect-ratio: var(--card-ratio);
-  grid-template-rows: minmax(0, 1fr);
-  transform-style: preserve-3d;
-  transition: transform 700ms ease;
-}
-.flip-card.is-flipped .flip-card-inner{
-  transform: rotateY(180deg);
-}
-.flip-card.is-flipped{
-  z-index: 10;
-}
-.flip-card-face{
-  position: relative;
-  grid-area: 1 / 1;
-  box-sizing: border-box;
-  min-height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.flip-card-front{
-  min-width: 0;
-}
-.flip-card-back{
-  box-sizing: border-box;
-  padding: 12%;
-  background: #f7f1e4;
-  color: #30291f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  font-size: clamp(14px, 1.5vw, 20px);
-  line-height: 1.4;
-  text-align: left;
-  overflow-wrap: anywhere;
-  overflow-y: auto;
-  transform: rotateY(180deg) scale(0.8);
-}
-.flip-card:focus-visible{
-  outline: 3px solid #5c5148;
-  outline-offset: 5px;
-}
 .music{
-  --card-ratio: 409 / 449;
-  right: 2%;
-  bottom: 5%;
-  width: clamp(140px, 20vw, 240px);
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  background-image: url("../img/COMPONENT 2_ MUSIC.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
   transform: rotate(-3deg);
+  z-index: 5;
 }
-.music-front{
-  background: url("../img/COMPONENT 2_ MUSIC.png") center / cover no-repeat;
-}
-.music-disc{
-  width: 60%;
-  aspect-ratio: 1;
+.music img{
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   animation: rotate 10s linear infinite;
 }
-.text-box-card{
+.musicoverlay{
+  display: block;
   position: absolute;
-  top: 5%;
-  left: 3%;
-  width: clamp(110px, 14vw, 180px);
-  aspect-ratio: 400 / 493;
-  transform: rotate(-4deg);
-  background: url("../img/COMPONENT 1_ TEXT BOX.png") center / contain no-repeat;
-  color: #30291f;
-  font-size: clamp(12px, 1.2vw, 17px);
-  text-align: center;
-  z-index: 4;
-}
-.text-box-card span{
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  right: 15%;
-}
-.polaroid-card{
-  --card-ratio: 405 / 471;
-  width: clamp(110px, 14vw, 180px);
-}
-.polaroid-card--normal{
-  left: 3%;
-  bottom: 3%;
-  transform: rotate(3deg);
-}
-.polaroid-card--school{
-  transform: rotate(3deg) scale(1.2);
-}
-.polaroid-card--tall{
-  top: 34%;
-  left: 34%;
-  transform: rotate(-4deg);
-}
-.polaroid-card--wide{
-  top: 2%;
-  left: 50%;
-  transform: rotate(3deg);
-}
-.polaroid-photo{
-  position: absolute;
-  object-fit: cover;
-}
-.polaroid-card--normal .polaroid-photo{
-  inset: 18% 23% 22%;
-  width: 54%;
-  height: 50%;
-}
-.polaroid-card--tall .polaroid-photo{
-  inset: 23% 23% 31%;
-  width: 54%;
-  height: 46%;
-}
-.polaroid-card--wide .polaroid-photo{
-  inset: 23% 15% 31%;
-  width: 70%;
-  height: 46%;
-}
-.polaroid-frame{
-  position: absolute;
-  inset: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  background-color: #fcf4e9;
+  z-index: 10;
+  opacity: 0;
+  border-radius: 10%;
+  transform: scale(0.84) translateY(8.5%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.musicoverlay h4{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+}
+.musicoverlay p{
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  text-align: center;
+}
+.musicoverlay:hover{
+  animation: overlay 0.3s ease forwards;
+  animation-iteration-count: 1;
+}
+@keyframes overlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-@media (prefers-reduced-motion: reduce){
-  .flip-card-inner{
-    transition: none;
-  }
-  .music-disc{
-    animation: none;
-  }
+
+.polaroid{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: url("../img/POLAROID%20NORM.png");
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-position: center;
+  background-size: cover;
+}
+.polaroid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*
  * Remove text-shadow in selection highlight:
