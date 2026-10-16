@@ -137,16 +137,77 @@
     </div>
     <div class="mylife-content">
       <div class="container">
-        <button class="music" type="button" aria-label="Mostra la didascalia sulla musica" aria-pressed="false">
-          <span class="music-inner">
-            <span class="music-face music-front" aria-hidden="true">
-              <img src="/img/sacro.png" alt="">
+        <button class="flip-card music" type="button" aria-label="Mostra la didascalia sulla musica" aria-pressed="false">
+          <span class="flip-card-inner">
+            <span class="flip-card-face flip-card-front music-front" aria-hidden="true">
+              <img class="music-disc" src="/img/sacro.png" alt="">
             </span>
-            <span class="music-face music-back">
-              <span>La musica è una delle mie fonti di ispirazione.</span>
+            <span class="flip-card-face flip-card-back">
+              <span>Serena Brancale SACRO</span>
             </span>
           </span>
         </button>
+
+        <div class="text-box-card">
+          <span>Fotografia</span>
+        </div>
+
+        <button class="flip-card polaroid-card polaroid-card--normal polaroid-card--school" type="button" aria-label="Mostra la didascalia della foto del mare" aria-pressed="false">
+          <span class="flip-card-inner">
+            <span class="flip-card-face flip-card-front polaroid-front" aria-hidden="true">
+              <img class="polaroid-photo" src="https://tse3.mm.bing.net/th/id/OIP.apXZQ1PQLISi4UJa2Msc9AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+              <img class="polaroid-frame" src="/img/POLAROID NORM.png" alt="">
+            </span>
+            <span class="flip-card-face flip-card-back">
+              <span>My school, ITET Leonardo Da Vinci, where I study ICT and more.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="flip-card polaroid-card polaroid-card--tall" type="button" aria-label="Mostra la didascalia della foto della scuola" aria-pressed="false">
+          <span class="flip-card-inner">
+            <span class="flip-card-face flip-card-front polaroid-front" aria-hidden="true">
+              <img class="polaroid-photo" src="/img/fotografia2.jpg" alt="">
+              <img class="polaroid-frame" src="/img/POLAROID TALL.png" alt="">
+            </span>
+            <span class="flip-card-face flip-card-back">
+              <span>Un incontro inatteso durante una passeggiata.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="flip-card polaroid-card polaroid-card--wide" type="button" aria-label="Mostra la didascalia della foto della barca" aria-pressed="false" style="transform: scale(1.2);">
+          <span class="flip-card-inner">
+            <span class="flip-card-face flip-card-front polaroid-front" aria-hidden="true">
+              <img class="polaroid-photo" src="/img/pianodilavoro.jpg" alt="">
+              <img class="polaroid-frame" src="/img/POLAROID WIDE.png" alt="">
+            </span>
+            <span class="flip-card-face flip-card-back">
+              <span>Placeholder</span>
+            </span>
+          </span>
+        </button>
+
+        <!-- To add a card, copy a template's contents into this container and change its image/text. -->
+        <template id="polaroid-card-template">
+          <button class="flip-card polaroid-card polaroid-card--normal" type="button" aria-label="Mostra la didascalia della fotografia" aria-pressed="false" style="top: 20%; left: 50%; bottom: auto;">
+            <span class="flip-card-inner">
+              <span class="flip-card-face flip-card-front polaroid-front" aria-hidden="true">
+                <img class="polaroid-photo" src="img/fotografia.jpg" alt="">
+                <img class="polaroid-frame" src="/img/POLAROID NORM.png" alt="">
+              </span>
+              <span class="flip-card-face flip-card-back">
+                <span>My school, ITET Leonardo Da Vinci, where I study ICT and more.</span>
+              </span>
+            </span>
+          </button>
+        </template>
+
+        <template id="text-box-template">
+          <div class="text-box-card" style="top: 20%; left: 50%;">
+            <span>Scrivi qui la tua nota.</span>
+          </div>
+        </template>
       </div>
     </div>
   </div>
