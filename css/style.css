@@ -421,8 +421,8 @@ h2 {
   transform: rotate(-4deg);
 }
 .polaroid-card--wide{
-  top: 5%;
-  left: 62%;
+  top: 2%;
+  left: 50%;
   transform: rotate(3deg);
 }
 .polaroid-photo{
