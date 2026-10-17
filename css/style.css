@@ -343,6 +343,7 @@ h2 {
   border-radius: 10%;
   transform: scale(0.84) translateY(8.5%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease-in-out;
 }
 .musicoverlay h4{
   position: absolute;
@@ -360,13 +361,11 @@ h2 {
   font-size: 15px;
   text-align: center;
 }
-.musicoverlay:hover{
-  animation: overlay 0.3s ease forwards;
-  animation-iteration-count: 1;
+.music:hover .musicoverlay{
+  opacity: 0.8;
 }
-@keyframes overlay {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.polaroid:hover .polaroidoverlay{
+  opacity: 1;
 }
 @keyframes rotate {
   from { transform: rotate(0deg); }
@@ -377,16 +376,35 @@ h2 {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-image: url("../img/POLAROID%20NORM.png");
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/POLAROID NORM.png");
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .polaroid img{
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
+  top: 41px;
+  left: 44px;
+  outline: 5px solid white;
+  outline-offset: -5px;
+}
+.polaroidoverlay{
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 38px;
+  width: 144px;
+  height: 166px;
+  background-color: #fef6eb;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 /*
  * Remove text-shadow in selection highlight:
