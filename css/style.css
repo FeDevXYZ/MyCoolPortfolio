@@ -247,7 +247,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 25px;
-  /* animation: scroll 30s linear infinite; */
+  animation: scroll 30s linear infinite;
   width: max-content; /* impedisce al track di restringersi */
 }
 
@@ -310,15 +310,21 @@ h2 {
   height: 100%;
   position: relative;
 }
+.componentscontainer{
+  height: fit-content;
+  width: fit-content;
+  transform: scale(clamp(0.6, calc(100vw / 1000px), 1.3));
+  transform-origin: top left;
+}
 .music{
   position: absolute;
-  bottom: 40px;
-  right: 20px;
+  top: 126px;
+  left: 395px;
   background-image: url("../img/COMPONENT 2_ MUSIC.png");
   background-size: cover;
   width: 200px;
   height: 200px;
-  transform: rotate(-3deg);
+  transform: rotate(2deg);
   z-index: 5;
 }
 .music img{
@@ -450,6 +456,35 @@ h2 {
 }
 .polaroidwide:hover .polaroidwideoverlay{
   opacity: 0.86;
+}
+
+
+.textbox{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 12px;
+  left: 255px;
+  height: 200px;
+  width: 200px;
+  background-image: url("../img/COMPONENT 1_ TEXT BOX.png");
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+  overflow: hidden;
+}
+.textbox p{
+  text-align: left;
+  position: absolute;
+  top: 10px;
+  height: 100%;
+  width: 55%;
+  transform: translateX(40px);
+  max-height: 180px;
+  overflow: hidden;
+  font-size: 14px;
 }
 /*
  * Remove text-shadow in selection highlight:
