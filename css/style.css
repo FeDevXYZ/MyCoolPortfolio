@@ -361,18 +361,19 @@ h2 {
   font-size: 15px;
   text-align: center;
 }
-.music:hover .musicoverlay{
-  opacity: 0.8;
-}
-.polaroid:hover .polaroidoverlay{
-  opacity: 1;
-}
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
+.music:hover .musicoverlay{
+  opacity: 0.8;
+}
 
+.polaroid:hover .polaroidoverlay{
+  opacity: 0.86;
+}
 .polaroid{
+  transform: scale(0.94) rotate(3deg);
   position: absolute;
   top: 20px;
   left: 20px;
@@ -391,20 +392,62 @@ h2 {
   object-fit: cover;
   top: 41px;
   left: 44px;
-  outline: 5px solid white;
-  outline-offset: -5px;
+  outline: 7px solid white;
+  outline-offset: -7px;
 }
 .polaroidoverlay{
-  display: block;
   position: absolute;
   top: 27px;
   left: 38px;
-  width: 144px;
-  height: 166px;
+  width: 124px;
+  height: 146px;
   background-color: #fef6eb;
+  padding: 10px;
   z-index: 10;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+}
+.polaroidoverlay h4{
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+
+.polaroidwide{
+  transform: scale(0.94) rotate(-3deg);
+  position: absolute;
+  top: 20px;
+  left: 240px;
+  width: 180px;
+  height: 200px;
+  background-image: url("../img/POLAROID WIDE.png");
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.polaroidwide img{
+  position: absolute;
+  width: 78%;
+  height: 56%;
+  object-fit: cover;
+  top: 45px;
+  left: 23px;
+}
+.polaroidwideoverlay{
+  position: absolute;
+  top: 27px;
+  left: 38px;
+  width: 124px;
+  height: 146px;
+  background-color: #fef6eb;
+  padding: 10px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.polaroidwide:hover .polaroidwideoverlay{
+  opacity: 0.86;
 }
 /*
  * Remove text-shadow in selection highlight:
