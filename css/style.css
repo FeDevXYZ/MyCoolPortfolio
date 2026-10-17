@@ -412,12 +412,14 @@ h2 {
   margin-bottom: 0;
 }
 
-
+.polaroidwide:hover .polaroidwideoverlay{
+  opacity: 0.9;
+}
 .polaroidwide{
   transform: scale(0.94) rotate(-3deg);
   position: absolute;
-  top: 20px;
-  left: 240px;
+  top: 152px;
+  left: 155px;
   width: 180px;
   height: 200px;
   background-image: url("../img/POLAROID WIDE.png");
@@ -436,12 +438,12 @@ h2 {
 }
 .polaroidwideoverlay{
   position: absolute;
-  top: 27px;
-  left: 38px;
-  width: 124px;
-  height: 146px;
+  top: 35px;
+  left: 13px;
+  width: 151px;
+  height: 126px;
   background-color: #fef6eb;
-  padding: 10px;
+  padding: 12px;
   z-index: 10;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
